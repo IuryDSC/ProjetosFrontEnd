@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    color: #555;
+}
+
+h1 {
+    font-size: 32px;
+    color: 	#4169E1;
+    margin: 15px 0;
+    border-bottom: 1px solid #cdcdcd;
+    margin-left: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    color: 	#4169E1;
+    margin: 15px 0;
+    border-bottom: 1px solid #cdcdcd;
+    margin-left: 10px;
+}
+
+h3 {
+    font-size: 20px;
+    color: 	#4169E1;
+    margin: 15px 0;
+    border-bottom: 1px solid #cdcdcd;
+    margin-left: 10px;
+}
+
+h4 {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+    margin-left: 10px;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+    margin-left: 10px;
+}
+
+a {
+    color: 	#4169E1;
+    text-decoration: none;
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    font-size: 10px;
+}
+
+ul { 
+    list-style: none; 
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+
+/* ESTILO DO TOPO */
+
+header { 
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px;
+}
+
+header .logo img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5px 10px;
+}
+
+header .pesquisa {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+header .pesquisa input {
+    width: 40%;
+    height: 35px;
+    border: 1px solid gray;
+    border-radius: 5px 0 0 5px;
+    padding: 5px 15px;
+    color: #555;
+}
+
+header .pesquisa button {
+    background-color: 	#4169E1;
+    padding: 5px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+header .pesquisa button:hover {
+    background-color: #4169E1 ;
+}
+
+header .login {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+header .login a {
+    padding: 10px;
+    margin-right: 5px;
+}
+
+header .login a:hover {
+    text-decoration: underline;
+}
+
+
+/* ESTILO DO MENU */
+nav.menu-principal {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(#4169E1, #6495ED );
+}
+
+nav.menu-principal ul {
+    width: 1400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav.menu-principal ul li {
+    margin-right: 2px;
+    line-height: 40px;
+}
+
+nav.menu-principal ul li a {
+    color: #000000;
+    padding: 10px 10px;
+}
+
+nav.menu-principal ul li a:hover {
+    color: #363636;
+}
+
+
+/* ESTILO DO MAIN + CONTANT + ASIDE */
+
+.content {
+    max-width: 1400px;
+    min-height: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* ASIDE */
+aside {
+    width: 20%;
+    padding: 15px;
+}
+
+aside.esquerdo {
+    border-right: solid 1px #4169E1;
+}
+
+aside.esquerdo ul {
+    width: 100%;
+    min-height: 500px;
+}
+
+aside.esquerdo ul li {
+    width: 100%;
+    margin-bottom: 2px;
+}
+
+aside.esquerdo ul li a {
+    color: #555;
+    padding: 3px 8px;
+    width: 100%;
+    display: block;
+    color: #4169E1;
+}
+
+aside.esquerdo ul li a:hover {
+    border-left: 3px solid #4169E1;;
+    padding-left: 5px;
+}

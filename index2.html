@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CESWIKI</title>
+    <link rel="shortcut icon" type="imagex/png" href="imagens/logo1.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!------- INÍCIO HEADER ----->
+    <header>   
+        <div class="logo" >
+            <a>CESWIKI</a>
+        </div>
+        
+
+        <div class="pesquisa">
+            <input id="campo-pesquisa" type="text" placeholder="Pesquise aqui sobre diversas coisas" title="Campo de busca" alt="Campo de busca">
+            <button id="btn-pesquisar" type="submit" title="Botão pesquisar" alt="Botão pesquisar">Pesquisar</button>
+        </div>
+
+        <div class="login">
+            <a href="#" alt="Entrar na conta" title="Entrar na conta">Entrar</a>  
+            <a href="#" alt="Criar uma conta" title="Criar uma conta" style="border-left: 1px solid #cdcdcd;">Criar uma conta</a>
+        </div>
+    </header>
+    <!------- FIM HEADER ----->
+
+
+    <!------- INÍCIO NAV ----->
+    <nav class="menu-principal">
+        <ul>
+            <li><a href="index.html">Arquitetura e Organização de Computadores</a></li>
+            <li><a href="index2.html">Sistemas Operacionais</a></li>
+        </ul>
+    </nav>
+    <!------- FIM NAV ----->
+
+
+    <!------- INÍCIO CONTENT ----->
+    <div class="content">
+        <!------- INÍCIO ASIDE ESQUERDO ----->
+        <aside class="esquerdo">
+            <h3>Sumário</h3>
+            <ul>
+                <li><a href="#historia">História dos Sistemas Operacionais</a></li>
+                <li><a href="#conceitos">Conceitos de Sistema Operacional</a></li>
+                <li><a href="#revisão">Revisão de hardware e software</a></li>
+                <li><a href="#utilização-cpu">Utilização de CPU, Memória RAM em sistemas operacionais</a></li>
+                <li><a href="#componentes">Componentes de um sistema operacional</a></li>
+                <li><a href="#gerencia-processos">Gerência de processos, identificando seus aspectos em sistemas operacionais</a></li>
+                <li><a href="#escalamento">Escalonamento de processos</a></li>
+                <li><a href="#threads">Conceitos de threads</a></li>
+                <li><a href="#concorrencia">Concorrência e sincronização de processos</a></li>
+            </ul>
+        </aside>
+        <!------- FIM ASIDE ESQUERDO ----->
+
+        <!------- INÍCIO MAIN ----->
+        <main>
+
+            <section id="historia">
+                <h1>
+                    História dos Sistemas Operacionais
+                </h1>
+                <p>
+                Os computadores são um conjunto de componentes eletrônicos (hardware), conectados, que recebem dados e os processam. 
+                A ideia da computação é utilizar hardware para processar dados de forma rápida e eficiente. 
+                Esses dados são obtidos por meio de programas de computador (software). Além da obtenção dos dados, os softwares utilizam a capacidade do hardware para realizar suas funções.
+                Porém, por questões de segurança, os softwares não têm acesso direto às funcionalidades de hardware. É necessário um meio de interfaceamento entre o software e o hardware, responsável pela comunicação entre ambos. Para isso, foram criados os sistemas operacionais.
+                </p>
+                <p>
+                Os sistemas operacionais são a forma com que podemos nos comunicar com os computadores. Eles interpretam nossa vontade e a transformam em comandos que são executados. 
+                É claro que foram necessários anos para que os sistemas operacionais atingissem o nível atual de desenvolvimento e essa evolução não aconteceu do dia para a noite.
+                No livro Sistemas operacionais: projeto e implementação, base teórica desta Unidade de Aprendizagem, leia os capítulos História dos sistemas operacionais e A quarta geração (1980 até os dias de hoje): computadores pessoais.
+                </p>
+                <figure>
+                    <img src="imagens/imagem5.gif" alt="Imagem 5">
+                    <figcaption>Imagem</figcaption>
+                </figure>
+            </section>
+
+            <section id="conceitos">
+                <h3>Conceitos de Sistema Operacional</h3>
+                <p>
+                A interface entre o sistema operacional e os programas de usuário é definida pelo conjunto de "instruções estendidas" fornecidas pelo sistema operacional. Estes conceitos, entre eles os chamados de sistemas, processos de sistema operacional e o sistema de arquivos com seus diretórios, 
+                são importantes para o entendimento do funcionamento base de todos os sistemas operacionais existentes no mercado.
+                </p>
+                <p>
+                Um sistema computacional pode ser dividido em quatro componentes: o
+                hardware, o sistema operacional, os programas aplicativos e o usuário (TANENBAUM, 2014). O hardware — a unidade central de processamento (CPU), a memória e os dispositivos de entrada/saída (E/S) — fornece os
+                recursos básicos de computação para sistema. Os programas aplicativos, como processadores de texto, planilhas, compiladores e navegadores da web,
+                definem as maneiras pelas quais esses recursos são usados para resolver problemas de computação dos usuários. O sistema operacional, por sua vez,
+                controla o hardware e coordena seu uso entre os vários programas aplicativos para os usuários.
+                </p>
+                <p>
+                Também podemos ver um sistema de computador como um conjunto de hardware, software e dados. O sistema operacional fornece os meios para o uso
+                adequado desses recursos no funcionamento do sistema informático. Assim, é possível pensar no sistema operacional como um governo ou corporação: ele
+                não desempenha nenhuma função fim por si próprio para o usuário, simplesmente fornece um ambiente dentro do qual outros programas podem fazer o
+                trabalho que entrega valor ao usuário final. Para entender melhor o papel do sistema operacional, vamos explorar sistemas operacionais de dois pontos de
+                vista: o do usuário e o do sistema (ARPACI-DUSSEAU; ARPACI-DUSSEAU, 2014; TANENBAUM, 2014).
+                </p>
+            </section>
+
+            <section id="revisão">
+                <h3>
+                    Revisão de hardware e software
+                </h3>
+                <p>
+                Computadores são baseados na interação entre componentes de hardware e softwarepara efetuar as tarefas que seus usuários desejam que sejam executadas. 
+                Fabricantes de computadores, engenheiros e cientistas colaboram para a definição de arquiteturas que distribuem as responsabilidades de uma máquina entre o seu hardware e o seu software.
+                O hardware, parte física da máquina, é geralmente composto por componentes eletrônicos, sendo algo que você pode tocar. O software, por sua vez, é composto por linhas de código e dados, 
+                sendo impossível de se ter contato diretamente com ele. Ao tocar em um CD ou DVD de instalação de um programa, você não está tocando no software em si, mas sim em um hardware cuja função é armazenar o software.
+                Entre usuários finais, é comum existir a dúvida do que é software e o que é hardware. Essa dúvida, no entanto, não pode existir em pessoas que trabalham na área de TI. É importante conhecer bem ambos os conceitos e saber como o computador opera.
+                </p>
+                <p>
+                A hierarquia de memórias é usada por projetistas de sistemas para criar computadores eficientes tanto em termos de performance como de custo. Dadas as diferenças de tempo de acesso, custo e volatilidade de cada tipo de memória, 
+                os projetistas estimam qual será a quantidade ideal de cada tipo de memória para que a máquina atenda aos requisitos dos usuários sem estourar o orçamento dos compradores.
+                Efetivamente, entre os níveis das caches internas ao processador e da memória secundária permanente, a hierarquia de memórias é uma hierarquia de caches. 
+                A memória RAM funciona como uma cache dos dados de programas que estão em execução e se encontram no HD ou SSD. A partir dos dados que estão na RAM, o sistema mantém nas caches L2 e L1 os dados mais usados (e também os dados com maior probabilidade de serem usados em breve).
+                </p>
+            </section>
+
+            <section id="utilização-cpu">
+                <h3>
+                    Utilização de CPU, Memória RAM em sistemas operacionais
+                </h3>
+                <p>
+                    Pode-se definir, de um modo resumido, que um sistema operacional é um conjunto de rotinas executadas pelo processador. 
+                    O objetivo principal de um sistema operacional é gerenciar o conjunto de hardware de um computador, tornando-o utilizável pelos usuários.
+                    Atualmente, existem muitos tipos de Sistemas Operacionais, cuja complexidade varia e depende das funções que o sistema disponibiliza e para que tipo de equipamento ele será usado. 
+                    Alguns sistemas são responsáveis pela gerência de muitos usuários, outros controlam dispositivos de hardware.
+                    DMA (Direct Memory Access) é uma funcionalidade implementada nos processadores e sistemas computacionais em geral, 
+                    com o objetivo de melhorar o desempenho e aumentar a velocidade do processamento de dados.
+                </p>
+                <p> <strong>Núcleo (Kernel)</strong><br>
+                    Ele é responsável pelas funções de baixo nível, como gerenciamento de memória, gerenciamento de processos, subsistemas de arquivos, rede, suporte
+                    aos dispositivos e periféricos conectados ao computador. O núcleo responsável por ser o elo do hardware com o software do computador. Em outras
+                    palavras, o principal objetivo é gerenciar o computador e permitir que os aplicativos sejam executados e façam uso dos recursos que a máquina tem. 
+                    O núcleo também tem que garantir, por exemplo, que a memória RAM seja usada
+                    em seu potencial sem risco para o computador. A figura 1 apresenta a relação entre o kernel, aplicativos, processador, memória e os dispositivos.
+                </p>
+            </section>
+
+            <section id="componentes">
+                <h3>
+                    Componentes de um sistema operacional 
+                </h3>
+                <p>
+                    Você sabia que um computador sem um sistema operacional não passa de um equipamento com circuitos lógicos e digitais? Para que os usuários possam utilizar um computador, 
+                    é necessário que ele possua um sistema operacional instalado e que esse sistema operacional seja constituído de vários componentes, como o sistema de arquivos, sistema de gerenciamento de memória, 
+                    sistema que cuida da alocação do processador, sistema que cuida dos periféricos de entrada e saída, entre outros.
+                    Todos esses componentes devem funcionar de maneira organizada para que o sistema operacional possa desempenhar as tarefas que se propõe. Caso isso não ocorra, o usuário poderá ter problemas na utilização do computador.
+                    É trabalho do sistema operacional abstrair essa hierarquia de forma utilizável para o usuário e, em seguida, gerenciar a abstração. A parte do sistema operacional que gerencia (parte da) hierarquia de memória é chamada de
+                    gerenciador de memória. Sua função é gerenciá-la de forma eficiente: rastrear
+                    quais partes estão em uso, alocar memória para os processos quando precisarem e desalocá-los quando forem concluídos (TANENBAUM; BOS, 2014).
+                </p>
+                <figure>
+                    <img src="imagens/imagem6.jpg" alt="Imagem 6">
+                    <figcaption>Imagem</figcaption>
+                </figure>
+            </section>
+
+            <section id="gerencia-processos">
+                <h3>
+                    Gerência de processos, identificando seus aspectos em sistemas operacionais
+                </h3>
+                <p>
+                    Você sabia que os computadores modernos têm como característica a capacidade de realizar várias tarefas ao mesmo tempo? Eles podem executar um programa utilitário, 
+                    realizar uma leitura no disco e apresentar um texto na tela simultaneamente. Esses tipos de sistemas são chamados de sistemas multiprogramados. A multiprogramação nos sistemas é capaz de permitir que o processador execute mais de um programa ao mesmo tempo, 
+                    pois realiza saltos dezenas ou centenas de vezes em milissegundos. Para o usuário final, isso deixa a sensação de que a execução é no mesmo instante de tempo.
+                    Porém, em cada um desses pequenos intervalos de tempo, são executados processos que são os responsáveis por essa sensação de paralelismo do usuário. A gerência dos vários processos a serem executados é uma tarefa um tanto quanto complexa para o sistema operacional. 
+                    Além da gerência dos processos que estão em execução, o sistema operacional gerencia o acesso aos recursos necessários para execução adequada de cada processo.
+                    Esse controle é realizado por um módulo do sistema operacional que supervisiona a execução dos programas e a alocação dos recursos necessários, além de controlar a interação da CPU com os diversos processos.
+                </p>
+            </section>
+
+            <section id="escalamento">
+                <h3>
+                    Escalonamento de processos 
+                </h3>
+                <p>
+                    Nos computadores atuais, é comum que, em qualquer tarefa que o usuário executar, diversos processos e threads estejam disputando acesso à unidade de processamento ou outros recursos. Por exemplo, quando um processo espera pela leitura dos dados em um dispositivo de entrada,
+                    este não pode bloquear o uso da unidade de processamento para outros processos, logo, ele deve ser substituído pelo próximo.
+                    Essa tarefa de organizar como os processos devem ser executados é responsabilidade do escalonador de processos, que por meio de uma política de decisões, conhecida como algoritmo de escalonamento, define a sequência de execução dos processos, 
+                    de modo a tentar otimizar a utilização dos recursos. O desempenho de um processo depende muito de quais tarefas esse executa, assim como a eficiência que lida com os recursos disponíveis pelo sistema. De modo geral, 
+                    o comportamento dos processos tende a alternar entre o processamento e o acesso a recursos, que podem ser de diferentes tipos.
+                    A complexidade de um sistema operacional aumenta com a presença de múltiplos processos ativos. Os computadores modernos são capazes de gerenciar os processos de uma infinidade de tarefas diferentes, permitindo enfileirar vários processos para execução. 
+                    No entanto, há diferentes estratégias para determinar a ordem em que os processos serão executados.
+                    Dessa forma, no capítulo Escalonamento de processos, base teórica desta Unidade de Aprendizagem, você entenderá quem é o responsável por organizar a ordem de execução dos processos, como estas estratégias são definidas e quais as principais características de um escalonador de processos e seus tipos.
+                </p>
+            </section>
+
+            <section id="threads">
+                <h3>
+                    Conceitos de threads
+                </h3>
+                <p>
+                    Os computadores são ferramentas cada vez mais úteis no dia a dia das pessoas, permitindo a execução de diversas tarefas ao mesmo tempo. Por exemplo, você pode ver um vídeo e realizar uma busca por um livro simultaneamente. 
+                    Essa capacidade de executar tarefas de modo simultâneo é possível pela utilização de threads.
+                    As threads, também conhecidas como processos “leves”, permitem que múltiplas tarefas colaborem entre si, simultaneamente. Desse modo, é de grande importância entender o impacto das threads na otimização dos sistemas operacionais. 
+                    A implementação de threads pelos sistemas operacionais possibilitou que os usuários executassem mais de uma tarefa ao mesmo tempo. Contudo, o suporte ao uso de threads não existia desde o começo. No início, os computadores monoprogramadossomente ofereciam a possibilidade de execução de um única tarefa por vez. 
+                    Com o surgimento da necessidade da execução de mais tarefas de modo simultâneo foram desenvolvidas diferentes estratégias de implementação de threads, as quais deram origem à multiprogramação.
+                </p>
+            </section>
+
+            <section id="concorrencia">
+                <h3>
+                    Concorrência e sincronização de processos
+                </h3>
+                <p>
+                    Conforme Silberschatz (2015), um thread é uma unidade básica de utilização da CPU. É composto por um ID de thread, um contador de programa, um conjunto de registradores e uma pilha. 
+                    Um thread compartilha com outros threads pertencentes ao mesmo processo sua seção de código, a seção de dados e outros recursos do sistema operacional, como arquivos abertos e sinais.
+                    Os threads estão presentes em diversos níveis dentro de um processo. Dessa forma, é importante conhecer alguns conceitos de threads de modo usuário, modo kernele modo híbrido.
+                    Descobrir como um computador opera todas nossas ações diante de suas funcionalidades é genial. É impossível sequer imaginar a quantidade de componentes que fazem parte dessa ferramenta, todos funcionando de maneira simultânea. 
+                    Na obra Sistemas operacionais, leia o capítulo Concorrência e sincronização de processos, no qual são abordados conceitos acerca dos processos, ou seja, o que compõe um processo. Você vai ver como o computador executa diversas atividades quase que simultaneamente e como se torna capaz de solucionar nossas necessidades diárias.
+                    A gerência de processos é uma atividade muito importante para o funcionamento computacional. Assim, os sinais são utilizados para notificar processos oriundos do próprio sistema operacional.
+                </p>
+            </section>
+        </main>
+        <!------- FIM MAIN ----->
+
+    </div>
+    <!------- FIM CONTENT ----->
+    <script src="scripts.js"></script>
+</body>
+</html>

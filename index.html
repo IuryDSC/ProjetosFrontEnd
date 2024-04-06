@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CESWIKI</title>
+    <link rel="shortcut icon" type="imagex/png" href="imagens/logo1.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!------- INÍCIO HEADER ----->
+    <header>   
+        <div class="logo" >
+            <a>CESWIKI</a> 
+        </div>
+
+        <div class="pesquisa">
+            <input id="campo-pesquisa" type="text" placeholder="Pesquise aqui sobre diversas coisas" title="Campo de busca" alt="Campo de busca">
+            <button id="btn-pesquisar" type="submit" title="Botão pesquisar" alt="Botão pesquisar">Pesquisar</button>
+        </div>
+
+        <div class="login">
+            <a href="#" alt="Entrar na conta" title="Entrar na conta">Entrar</a>  
+            <a href="#" alt="Criar uma conta" title="Criar uma conta" style="border-left: 1px solid #cdcdcd;">Criar uma conta</a>
+        </div>
+    </header>
+    <!------- FIM HEADER ----->
+
+
+    <!------- INÍCIO NAV ----->
+    <nav class="menu-principal">
+        <ul>
+            <li><a href="index.html">Arquitetura e Organização de Computadores</a></li>
+            <li><a href="index2.html">Sistemas Operacionais</a></li>
+        </ul>
+    </nav>
+    <!------- FIM NAV ----->
+
+
+    <!------- INÍCIO CONTENT ----->
+    <div class="content">
+        <!------- INÍCIO ASIDE ESQUERDO ----->
+        <aside class="esquerdo">
+            <h3>Sumário</h3>
+            <ul>
+                <li><a href="#conceitos">Conceitos Basicos de Informatica</a></li>
+                <li><a href="#evolução">Evolução da Arquitetura de Computadores</a></li>
+                <li><a href="#componentes-computador">Principais Componentes de um Computador</a></li>
+                <li><a href="#componentes-basicos">Componentes Eletronicos Basicos</a></li>
+                <li><a href="#hierarquia">Tecnologia e Hierarquia de Memórias</a></li>
+                <li><a href="#memoria-principal">Memória Principal e Cache </a></li>
+                <li><a href="#memoria-ram">Memória RAM e CACHE </a></li>
+                <li><a href="#memoria-secundaria">Registradores e Memória Secundária</a></li>
+                <li><a href="#entradas">Entradas, Saída e Interrupções Programadas</a></li>
+            </ul>
+        </aside>
+        <!------- FIM ASIDE ESQUERDO ----->
+
+        <!------- INÍCIO MAIN ----->
+        <main>
+
+            <section id="conceitos">
+                <h1>
+                    Conceitos Basicos de Informatica
+                </h1>
+                <p>
+                    O computador, sem dúvida, foi uma das maiores invenções do ser humano. Ele possibilitou novos modelos de negócios, avanços na Medicina, Engenharia, Artes, acesso a toneladas de informações, aproximação do que antes era considerado longe, facilitando o estudo a distância.
+                    A história do computador perpassa por eventos históricos de igual importância. 
+                    O computador tem partes físicas (hardware) e programas de computador (software), e juntos eles realizam tarefas que antes nem sonharíamos em realizar.
+                    Conhecer o computador, seus componentes e sua história é de fundamental importância para começar a compreender o mundo digital.
+                </p>
+                <p>
+                    Um computador é uma máquina feita para processar entradas e exibir saídas.
+                    Ainda que o conceito pareça simples, ele de início pode trazer alguma confusão.
+                    Então, vamos tentar explicá-lo por meio de um exemplo: você trabalha em um
+                    escritório especializado em finanças, que recebe diariamente centenas de documentos de empresas que contrataram os seus serviços (notas fiscais, recibos,
+                    relatório de vendas, relatório de investimentos, etc.). O seu computador recebe
+                    como entrada essas informações, as quais estão desorganizadas e sem uma
+                    estrutura padronizada; ele soma, multiplica, agrupa e transforma (processa)
+                    esses dados aparentemente desorganizados em informações que serão úteis
+                    para as empresas, como projeções financeiras e estimativas de custos futuros.
+                    Essas informações serão colocadas em um relatório e exibidas para o cliente (saída do processamento)
+                </p>
+                <p>
+                    Antes de falarmos sobre sistemas computacionais, vamos entender o que é um computador. O óbvio seria dizer que é uma máquina (e não estaríamos
+                    errados), mas o computador é muito mais do que isso. Ele é uma combinação de hardware, software e inteligência humana. Hardware é a parte física do
+                    computador: a caixa, as placas internas, os circuitos, a impressora, o modem, o roteador sem fio, o monitor, o mouse e outros. O software são os programas
+                    de computador, como o sistema operacional (Windows, Linux, etc.), planilhas e editores de texto (como o Microsoft Word) e muitos outros. Entre os
+                    profissionais da área de informática, existe uma expressão bem-humorada que diz: hardware é tudo aquilo que você chuta, e software é tudo aquilo que
+                    você xinga. Seguindo essa lógica, fica mais fácil entender a que cada termo se refere — mas evite de sair por aí chutando o seu computador!
+                    Resumindo, o computador é uma máquina que resolve problemas por meio da execução de instruções que são passadas a ele. Essas instruções são
+                    chamadas de programas de computador. O programa é um conjunto de instruções lógicas e finitas (também chamado de algoritmo), que executam uma tarefa específica.
+                </p>
+                <figure>
+                    <img src="imagens/imagem1.webp" alt="Imagem 1">
+                    <figcaption>Imagem</figcaption>
+                </figure>
+            </section>
+
+            <section id="evolução">
+                <h3>Evolução da Arquitetura de Computadores</h3>
+                <p>
+                    A arquitetura de computadores é o projeto conceitual e fundamental da estrutura operacional de um sistema computacional. Ela é o estudo dos requisitos necessários para que um computador funcione, e de como organizar os diversos componentes para obter melhores desempenhos. 
+                    Com o objetivo de tornar o mundo um lugar melhor, essa arquitetura foi evoluindo e, hoje, sabe-se que o impacto das gerações atuais de computadores na sociedade é exponencial. A era tecnológica tornou-se fundamental para o desenvolvimento da humanidade e, ao contrário do que se pensava antes, de modo sustentável.
+                </p>
+                <p>
+                    Os primórdios dos computadores datam de muitos anos atrás, por volta de 5500 a.C., com a criação do ábaco (Figura 1), que era utilizado para realizar
+                    diversos cálculos do dia a dia dos seres humanos em diversas etapas da humanidade. 
+                    Em 1622, o inglês William Oughtred inventou a régua de cálculo (Figura 2), uma ferramenta baseada na tábua de logaritmos e que funciona
+                    por meio da aproximação de resultados, de forma não totalmente precisa.
+                </p>
+
+                <p>
+                    Em 1833, ocorreu um grande marco na história dos computadores: Charles Babbage e Ada Byron King se conhecem profissionalmente. Por
+                    volta de 1834, Charles Babbage inventou outra máquina: dessa vez, a máquina analítica, que tinha propósito de uso geral. Foi a primeira máquina
+                    que poderia ser programada para executar vários comandos de qualquer tipo. Apesar de Babbage não ter tido oportunidade de construí-la, tanto
+                    por falta de recursos financeiros quanto tecnológicos, essa máquina foi base para os computadores que utilizamos até hoje, como, por exemplo,  
+                </p>
+                <p>
+                    CPU e memória expansíveis. Logo em seguida, Ada se tornaria a primeira programadora de computadores do mundo, trabalhando muito tempo ao lado de Babbage.
+                    Ada foi quem inventou e visualizou a importância dos laços de repetição (loops), de forma a trabalhar em cartões perfurados para que isto ocorresse.
+                    Sua contribuição para a informática foi tão grandiosa que o governo americano
+                    batizou uma linguagem de programação com o nome de Ada.
+                    Como terceiro ponto da evolução histórica marcante, temos a máquina de
+                    Pascal (Figura 3), considerada a primeira calculadora mecânica e que funcionava por meio de dois discos distintos, os quais desempenhavam o papel de
+                    inserir dados e colher os resultados. 
+                </p>
+            </section>
+
+            <section id="componentes-computador">
+                <h3>
+                    Principais Componentes de um Computador
+                </h3>
+                <p>
+                    Os computadores necessitam de componentes básicos para o funcionamento: a unidade pensante que faz todo o processamento (conhecida como processador), 
+                    uma unidade na qual os dados são armazenados (a memória do computador) e os dispositivos que fazem a comunicação entre os seres humanos e o computador, que são os periféricos de entrada e/ou saída de dados.
+                </p>
+                <p>
+                    Atualmente, os computadores estão cada vez mais potentes e menores, e seus usos são ilimitados. Os dados manipulados pelos computadores podem
+                    ter diversas formas e representações, e o espectro de possibilidades de usos e transformações desses dados é amplo. Eles são os elementos fundamentais
+                    de trabalho e determinam as funções básicas do computador: processamento de dados, armazenamento de dados, movimentação de dados e controle.
+                    O processamento de dados deve permitir transformações de diferentes tipos de dados, gerando novos dados, realizando cálculos, ajustes, etc. Esse
+                    é o núcleo do trabalho do computador. Já o armazenamento de dados é uma função essencial, pois o computador precisa manter os dados que está
+                    utilizando no processamento, mesmo que de forma temporária, mas também precisa guardar dados de forma estável, para que possam ser utilizados
+                    posteriormente. Junto com essas funções, a movimentação de dados é uma necessidade para que o computador possa trabalhar, pois representa os caminhos e as funções utilizadas para receber dados de entrada, transmitir dados
+                    de saída, armazenar dados e recuperar dados armazenados. Finalmente, para
+                    garantir a execução correta dessas três funções, é exercido o controle, que coordena o trabalho de seus elementos funcionais. O esquema dessas funções pode ser visto 
+                </p>
+                <p>
+                    Nos primeiros computadores, havia apenas um componente interno de cada tipo, mas, nos últimos anos, temos computadores com diversos processadores,
+                    além da replicação de outros componentes, ampliando cada vez mais suas capacidades.
+                </p>
+            </section>
+
+            <section id="componentes-basicos">
+                <h3>
+                    Componentes Eletronicos Basicos
+                </h3>
+                <p>
+                    Computadores são importantes aliados na rotina profissional e pessoal. 
+                    Com os componentes eletrônicos adequados ao objetivo de uso e o domínio de softwares necessários, eles maximizam a resolução de problemas em velocidade e qualidade. 
+                    Quando pensamos em um computador atual, difi cilmente todos os componentes que o compõem são percebidos. Diversas características são abstraídas
+                    devido ao uso facilitado e humanizado da internet, com o qual verifi camos, por
+                    exemplo, as últimas notícias, os resultados esportivos, os horários de fi lmes
+                    em cartaz ou extratos bancários.
+                    Em 1944, a Universidade de Harvard criou o Mark I e, dois anos depois,
+                    Allan Turing, o pai da computação, desenvolveu o Collossus.
+                    Como curiosidade, você sabia que a primeira geração de computadores era
+                    formada por válvulas? Válvulas são componentes eletrônicos que possuem
+                    eletrodos em seu interior e são fechadas a vácuo, com design parecido ao de uma lâmpada.
+                </p>
+            </section>
+
+            <section id="hierarquia">
+                <h3>
+                    Tecnologia e Hierarquia de Memórias 
+                </h3>
+                <p>
+                    A palavra memória é amplamente comentada quando se fala em computadores, mas será que todas as pessoas utilizam de forma correta esse conceito? 
+                    Será que existe apenas um tipo de memória? Ou será que existem múltiplos tipos de memória e uma organização hierárquica entre eles? 
+                    Hierarquia de memórias é um conceito curioso que, por vezes, passa despercebido quando alguém compra um computador, preocupado com o seu desempenho. O conjunto de memórias formado por registradores, cache, memória principal e memória secundária interferem de forma significativa no desempenho e no custo do computador. 
+                    Registradores são a menor, mais rápida e mais cara memória, já a memória secundária é a maior, mais lenta e mais barata das memórias.
+                    A memória do computador se divide hierarquiacamente; essa hierarquia precisa ser compreendida e utilizada da melhor maneira possível, uma vez que cada tipo de memória tem uma performance e um custo diferente. Hierarquicamente, as memórias são organizadas conforme a sua proximidade com o processador, nesta ordem: registradores, cache, memória principal e memória secundária. 
+                    Além dessas memórias, existe a memória virtual, a qual utiliza o disco rígido (HD) como uma extensão da memória principal.
+                    As memórias são componentes de extrema importância para o computador, uma vez que são elas que permitem armazenar, de forma permanente ou temporária, todas as informações. 
+                    Dentro do computador as memórias são organizadas hierarquicamente.
+                </p>
+                <figure>
+                    <img src="imagens/imagem2.jpg" alt="Imagem 2">
+                    <figcaption>Imagem</figcaption>
+                </figure>
+            </section>
+
+            <section id="memoria-principal">
+                <h3>
+                    Memória Principal e Cache 
+                </h3>
+                <p>
+                    Um sistema computacional é formando por diversos conjuntos de memórias, com características distintas atuando em prol de um mesmo objetivo, que é a execução e o armazenamento dos diversos programas e dados que esse sistema computacional em questão possui. 
+                    Com a evolução tecnológica exigindo cada vez mais performance dos sistemas computacionais, muitas vezes, é necessário aplicar algumas técnicas, que têm como objetivo fazer com que o desempenho dos sistemas computacionais acompanhe as necessidades do mercado. 
+                    As memórias DRAM são memórias voláteis de grande importância para a computação na atualidade, uma vez que elas são as responsáveis por armazenar temporariamente os sistemas e os seus dados fornecem maior velocidade na entrega dos dados armazenados para processamento.
+                    Na história da computação, diversos modelos de memórias DRAM surgiram e desapareceram do mercado, sendo que o sucessor de cada um desses tipos de memória sempre inseriram inovações trazendo consigo diversas melhorias, além, é claro, de uma performance e capacidade de armazenamento superior.
+                    As memórias de alta performance são caras, consequentemente, seu uso em larga escala em um sistema computacional, apesar de interessante, terminaria por inviabilizar a comercialização de determinado sistema. Assim, técnicas como a utilização de memória cache em pequenas doses e distribuída em alguns níveis ajuda a inserir performance em um sistema, 
+                    uma vez que os dados podem ser pré-carregados de memórias mais lentas, como a memória principal, e entregues na velocidade que o processador necessita.
+                </p>
+
+                <figure>
+                    <img src="imagens/imagem4.png" alt="Imagem 3">
+                    <figcaption>Imagem</figcaption>
+                </figure>
+            </section>
+
+            <section id="memoria-ram">
+                <h3>
+                    Memória RAM e CACHE 
+                </h3>
+                <p>
+                    Os sistemas computacionais necessitam armazenar os dados em lugares onde possam ficar disponíveis para processamento a qualquer momento. Esse é o papel das memórias: armazenar dados. Esse armazenamento pode ser utilizado para armazenar informações tais como dados, instruções de programas e/ou guardar instruções de utilização mais frequentes. As memórias desempenham um papel muito importante, 
+                    talvez um dos mais importantes, nos sistemas computacionais. Cada tipo funciona de uma forma diferente e tem diferentes características. 
+                    Em um sistema computacional, existe um conjunto de dispositivos (do qual a
+                    memória faz parte) que servem para armazenar grandes quantidades de dados binários. As memórias geralmente são organizadas em forma matricial de um
+                    conjunto de latches, flip flops ou capacitores. Em geral, as matrizes são compostas de células que armazenam 1 bit e são
+                    organizadas em unidades de 1 a 8 bits. A combinação de 8 bits é chamada
+                    de byte. Cada bloco ou posição de memória pode ser acessado por meio da especificação de sua linha e coluna.
+                    Um arranjo de 256 células de memória pode ser organizado de várias maneiras, dependendo da sua unidade de dados. Por exemplo, pode ser uma
+                    memória com 16 posições de 2 bytes (16 bits) cada, uma de 32 posições com 1 byte (8 bits) cada, ou uma de 256 posições de 1 bit cada.
+                    Especifica-se uma memória pelo tamanho da palavra vezes o número de palavras que ela pode armazenar.
+                    A localização de uma célula em uma memória é dada pelo endereço. Entretanto, devemos notar que, para acessar um bit, o endereço será dado pela
+                    linha e coluna correspondentes, mas se o endereço for da palavra, ele será só o da linha correspondente. Assim, a forma de endereçamento depende de
+                    como a memória está organizada. Nos computadores atuais, as memórias de acesso aleatório estão organizadas em bytes ou múltiplos deles. Desse modo,
+                    a menor palavras acessada em um computador é 1 byte ou 8 bits.
+                </p>
+            </section>
+
+            <section id="memoria-secundaria">
+                <h3>
+                    Registradores e Memória Secundária
+                </h3>
+                <p>
+                    Os registradores são considerados as memórias com maior velocidade existente. Sendo os dispositivos de maior custo entre os diversos tipos de memória. 
+                    A memória secundária tem um papel importante no funcionamento de um computador, devido ao armazenamento de dados para os usuários e soluções de Tecnologia da Informação (TI). Muitas vezes é confundida com a memória principal; porém, tem como grande diferença a possibilidade de armazenar um volume maior de informações de maneira permanente.
+                    A unidade central de processamento (CPU, do inglês central processing unit) do computador possui internamente um tipo de memória que apresenta
+                    velocidade elevada, permitindo armazenar informações temporárias para a execução de comandos. Essa memória é composta pelos chamados registradores, que possuem tipos e funções diferentes. A quantidade de registradores
+                    geralmente é numerosa, e os mesmos garantem o armazenamento de informações necessárias para o processamento das instruções. Cabe ressaltar que esse armazenamento é temporário. A Figura 1 apresenta a estrutura de uma
+                    CPU, apontando a localização dos registradores.
+                    Os registradores estão no topo da hierarquia de memória e são o meio mais rápido para o sistema manipular dados. Em um microprocessador
+                    simples, o registrador consiste em um único local de memória, geralmente chamado de acumulador. Os registradores são construídos a partir de uma célula
+                    de memória rápida e com várias portas. Eles devem ser capazes de direcionar seus dados para um barramento interno em um único ciclo de clock (relógio).
+                    O resultado da operação da unidade lógica e aritmética (ULA) é armazenado e pode ser reutilizado em uma operação subsequente ou salvo na memória.
+                </p>
+            </section>
+
+            <section id="entradas">
+                <h3>
+                    Entradas, Saída e Interrupções Programadas
+                </h3>
+                <p>
+                    Os dispositivos de entrada e saída (E/S) são essenciais para a interação dos usuários ou do meio externo com o computador. Existe toda uma lógica com padrões que permite a comunicação entre esses dispositivos com processador e memória, 
+                    a fim de processar de maneira adequada e eficaz os dados, além de apresentá-los após processamento para os usuários ou meio externo. 
+                    Um barramento típico é constituído de linhas de dados, linhas de endereços, linhas de controle e linhas de energia. Essas linhas, também chamadas de vias, 
+                    são responsáveis por entregar as informações necessárias para o funcionamento dos barramentos.
+                    São considerados dispositivos de entrada e saída os dispositivos encarregados de enviar informações a serem processadas pelo computador ou apresentar informações que já foram processadas. Esses dispositivos fazem parte da arquitetura de John von Neumann, o qual procura explicar as principais partes de um computador.
+                    O funcionamento da comunicação entre esses dispositivos é de extrema importância, tendo algumas características específicas.
+                    No dia a dia dos usuários de computador ocorrem interações com o sistema operacional por meio de dispositivos de entrada e saída. Por meio de dispositivos como mouse, teclado, monitor e impressoras, por exemplo, 
+                    é possível enviar e receber informações processadas (ou para serem processadas) para o computador.
+                </p>
+                <p>
+                    Dispositivos de entrada/saída é um termo usado no campo da computação. A entrada é a inserção de dados por meio de algum código ou programa em outro programa ou hardware. 
+                    Já a saída é a obtenção de dados como resultado de alguma operação.
+                </p>
+            </section>
+        </main>
+        <!------- FIM MAIN ----->
+
+    </div>
+    <!------- FIM CONTENT ----->
+
+    <script src="scripts.js"></script>
+</body>
+</html>
