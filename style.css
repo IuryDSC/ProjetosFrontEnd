@@ -208,28 +208,3 @@ aside.esquerdo ul li a:hover {
     border-left: 3px solid #4169E1;;
     padding-left: 5px;
 }
-
-@media screen and (min-width: 768px) {
-    /* Exemplo de largura mínima de 768px para PCs e tablets */
-    /* Adicione estilos específicos para telas maiores aqui */
-    body {
-        font-size: 16px; /* Exemplo de tamanho de fonte para telas maiores */
-    }
-}
-
-/* Estilos para dispositivos móveis */
-@media screen and (max-width: 767px) {
-    /* Exemplo de largura máxima de 767px para dispositivos móveis */
-    /* Adicione estilos específicos para dispositivos móveis aqui */
-    body {
-        font-size: 14px; /* Exemplo de tamanho de fonte para telas menores */
-    }
-}
-
-/* Estilos para tornar o botão de pesquisa responsivo */
-@media screen and (max-width: 767px) {
-    #btn-pesquisar {
-        padding: 8px 16px;
-        font-size: 14px;
-    }
-}
